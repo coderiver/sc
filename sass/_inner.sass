@@ -1,0 +1,128 @@
+@import "base"
+//styles for inner pages
+.top	
+	padding: 35px 0 30px
+	text-align: center
+.top__title
+	font-size: 33px
+	font-weight: bold
+	color: $gr  
+	text-transform: uppercase
+	text-shadow: 0 1px 0 #fff
+	span
+		color: $bl 
+.top__txt
+	padding-top: 20px
+	p
+		margin-bottom: 3px
+	strong
+		+fontb
+//order-cart
+.order-cart
+	position: relative
+	padding: 3px 3px 0 3px
+	background: #cad0d9
+	@include background-image(linear-gradient(#cad0d9, #afb4bb))
+	border-radius: 8px 8px 0 0
+	&:before, &:after
+		content: ""
+		position: absolute
+		background: #f7f7fa 
+	&:before
+		left: -17px
+		right: -15px
+		bottom: -4px
+		height: 6px
+		box-shadow: 0 0 5px rgba(0,0,0,.3)
+		border-radius: 50% 50% 0 0
+	&:after
+		bottom: -14px
+		left: -20px
+		right: -20px
+		height: 15px
+.order-cart__in
+	padding: 12px 20px 20px 20px
+	background: #fff 
+	border-radius: 6px 6px 0 0
+	span
+		display: block
+		padding-bottom: 10px
+		margin-bottom: 16px
+		border-bottom: 2px solid #d7dddf 
+		overflow: hidden
+		text-align: right
+		font-size: 15px
+		color: $bld 
+		strong
+			+fontb	
+			font-size: 17px 
+		i
+			float: left
+			margin-top: 2px
+			+s(logo-s)
+	.btn
+		width: 100%
+//our-cars
+.our-cars	
+	background: #FFF 
+	.container
+		position: relative
+		padding: 30px 0
+		border-bottom: 1px solid #e1e6e8 
+	.title
+		margin-bottom: 20px
+		text-align: center
+.our-cars__list
+	text-align: center 	
+	font-size: 0 
+.our-cars__item 
+	display: inline-block
+	width: 150px
+	padding: 0 19px
+	vertical-align: top
+	font-size: 13px
+	span
+		display: block
+		color: #464646 
+.our-cars__price
+	padding-top: 5px
+	color: $bld
+	font-size: 16px
+	strong
+		+fontb
+.our-cars__btn-prev, .our-cars__btn-next
+	position: absolute
+	top: 110px
+.our-cars__btn-prev
+	left: -20px
+	+s(our-cars-prev)
+.our-cars__btn-next
+	right: -20px
+	+s(our-cars-next)
+//faq
+.faq
+	padding: 30px 25px 0
+.faq__type
+	overflow: hidden
+	.number
+		float: left
+		margin-right: 15px
+	.title
+		padding: 7px 0 10px
+		overflow: hidden
+.faq__list
+	padding: 0 0 30px 47px			
+.faq__item
+	border-top: 1px solid #e5e5e5		
+	&:last-child
+		border-bottom: 1px solid #e5e5e5
+.faq__item-title 
+	padding: 15px 0	
+	+no-sel
+	+fontb
+	cursor: pointer
+	&:hover
+		color: $bl 
+.faq__item-txt
+	display: none
+	padding-bottom: 15px

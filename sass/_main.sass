@@ -1,0 +1,43 @@
+@import "base"
+//styles for main page(class with prefix "m-")
+.main	
+	padding-bottom: 30px
+	.container
+		position: relative
+		padding: 0 0 0 10px
+	.top
+		padding: 50px 0 40px
+.main__bg-left, .main__bg-right
+	position: absolute
+	top: 0
+.main__bg-left
+	left: -33px
+	+s(main-bg-1)
+.main__bg-right
+	right: -33px
+	+s(main-bg-2)
+.main__content
+	+clr
+.main__player
+	float: left
+	width: 620px 
+	box-shadow: 0 1px 1px rgba(0,0,0,.2)
+	border-radius: 3px
+	overflow: hidden
+.main__list
+	float: right
+	width: 285px
+	li
+		margin-bottom: 20px
+		+clr
+		&:first-child
+			.main__step
+				border: none
+	.number
+		float: left
+		margin: 0 20px 0 5px	  
+.main__step
+	padding-bottom: 15px
+	border-bottom: 1px solid #dadfe3 
+	overflow: hidden
+	+fontb

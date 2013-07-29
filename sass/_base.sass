@@ -1,0 +1,80 @@
+// this one just agregates all the libs
+@import "compass/css3"
+//variables
+$bl: #4e9bcc
+$bld: #2c7eb2
+$gr: #596c75
+$grd: #475962
+// global sprites with padding
+$icons: sprite-map("icons/*.png", $spacing: 10px)
+// sized sprites
+@mixin image-size($path)
+	width: image-width($path)
+	height: image-height($path)
+@mixin sized-sprite($map, $sprite)
+	background: sprite($map, $sprite) no-repeat
+	@include image-size(sprite-file($map, $sprite))
+//shortcut
+@mixin s($sprite, $map: $icons)
+	background: sprite($map, $sprite) no-repeat
+	@include image-size(sprite-file($map, $sprite))
+//only image, when dimensions are useless
+@mixin si($map, $sprite)
+	background: sprite($map, $sprite) no-repeat
+//mixin
+@mixin ht
+	font: 0/0 a
+	text-shadow: none
+	color: transparent
+@mixin clr
+	&:before, &:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+//transition
+@mixin trans($what)
+	-moz-transition: $what
+	-o-transition: $what
+	-webkit-transition: $what
+	-ms-transition: $what
+	transition: $what
+// placeholder color
+@mixin placeholder($color)
+	&.placeholder
+		color: $color
+	&:-moz-placeholder
+		color: $color
+	&::-webkit-input-placeholder
+		color: $color
+//no-select
+@mixin no-sel
+	-moz-user-select: none
+	-webkit-user-select: none
+	user-select: none
+//box-sizing
+@mixin box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+//custom mix
+@mixin bsize
+	background-repeat: no-repeat
+	background-size: cover 
+	background-position: 50% 50%
+//fonts
+@font-face
+	font-family: "HelveticaNeue"
+	src: url('../fonts/HelveticaNeue.eot')
+	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg')
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: "HelveticaNeueBold"
+	src: url('../fonts/HelveticaNeueBold.eot')
+	src: url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype'), url('../fonts/HelveticaNeueBold.svg#HelveticaNeueBold') format('svg')
+	font-weight: normal
+	font-style: normal
+@mixin font
+	font-family: "HelveticaNeue", Arial, Tahoma, sans-serif
+@mixin fontb
+	font-family: "HelveticaNeueBold", Arial, Tahoma, sans-serif
