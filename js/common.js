@@ -1,22 +1,26 @@
 $(document).ready(function() {
 
 //choice city
-function choice_city() {
-	var el = $('.js-city');
+function select() {
+	var el = $('.js-select');
 	var city = el.find('span');
 	var item = el.find('li');
+	var list = el.find('ul');
 	city.click(function() {
+		el.removeClass('is-open');
+		list.hide();
 		$(this).parent().toggleClass('is-open');
 		$(this).next().toggle();
 	});
 	item.click(function() {
 		var val = $(this).text();
+		$(this).parent().prev().addClass('is-selected');
 		$(this).parent().prev().html(val + '<i></i>');
 		$(this).parent().hide();
 		el.removeClass('is-open');
 	});
 	el.click(function(event){
-	    event.stopPropagation();
+	  event.stopPropagation();
 	});
 };
 
@@ -26,12 +30,12 @@ $('.js-accos').click(function() {
 })
 
 //init
-choice_city();
+select();
 
 //click document
 $(document).click(function() {
-	$('.js-city').removeClass('is-open');
-	$('.js-city ul').hide();
+	$('.js-select').removeClass('is-open');
+	$('.js-select ul').hide();
 });
 
 

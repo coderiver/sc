@@ -102,6 +102,9 @@
 //faq
 .faq
 	padding: 30px 25px 0
+	background: #FFF
+	box-shadow: 0 1px 1px rgba(0,0,0,.2)  
+	border-radius: 3px
 .faq__type
 	overflow: hidden
 	.number
@@ -126,3 +129,613 @@
 .faq__item-txt
 	display: none
 	padding-bottom: 15px
+//call-us
+.call-us
+	margin-top: 104px
+	padding: 25px
+	background: $bl
+	border-radius: 3px 
+	color: #FFF 
+.call-us__title
+	+fontb
+	font-size: 18px
+	text-transform: uppercase
+.call-us__phone
+	padding: 10px 0 13px
+	border-bottom: 2px solid #71afd6 
+	margin-bottom: 12px
+	text-transform: uppercase
+	font-size: 17px
+	strong
+		+fontb
+	span
+		display: block
+		padding-top: 5px
+		text-transform: none
+		font-size: 13px
+.call-us__time
+	strong	
+		display: block
+		font-size: 24px
+		+fontb
+		span
+			display: block
+			font-size: 13px
+//need
+.need
+	padding: 30px
+	overflow: hidden
+.need__pic
+	position: relative
+	float: right
+	width: 380px
+	height: 700px
+	background: url(../img/need.jpg) no-repeat 0 0  
+	.order-cart
+		&:before
+			display: none
+		&:after
+			bottom: -2px
+			height: 2px
+			background: none 
+			@include background-image(linear-gradient(left, rgba(148,184,208,0), rgba(148,184,208,1) 10%, rgba(148,184,208,1) 90%, rgba(148,184,208,0) 100%))
+.need__pic-in
+	position: absolute
+	left: 50px
+	right: 50px
+	bottom: 40px
+.need__pic-title 
+	margin-bottom: 40px
+	strong
+		display: block
+		+fontb
+		font-size: 22px
+		text-transform: uppercase
+		color: #FFF
+		text-shadow: 0 1px 0 rgba(0,0,0,.2) 
+		&:first-child
+			margin-bottom: 15px
+			font-size: 15px
+.need__txt
+	float: left
+	width: 470px
+.need__item
+	padding-top: 15px
+	margin-top: 15px
+	border-top: 1px solid #e5e5e5
+	&:first-child
+		padding-top: 0
+		margin-top: 0
+		border: none  
+	.title
+		margin-bottom: 7px
+//registration
+.reg
+	padding: 20px
+.reg__terms
+	padding: 20px 25px 15px 
+	margin-bottom: 20px
+	border-radius: 3px
+	background: #e84646 
+	color: #fff
+	.title
+		margin-bottom: 15px
+		color: #FFF 
+	li
+		position: relative
+		padding-left: 27px 
+		margin-bottom: 10px
+		+fontb
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(term)
+.reg__cols
+	margin-bottom: 20px
+	+clr
+.reg__col
+	float: left
+	width: 440px 
+	&:first-child
+		margin-right: 20px
+.reg__block
+	padding: 25px 25px 10px 25px
+	background: #f1f1f1
+	border-radius: 4px
+	.title
+		padding-bottom: 15px
+		border-bottom: 1px solid #d8d8d8
+		margin-bottom: 15px 
+	.title_mod
+		margin-top: 10px
+		padding-top: 15px
+		border-top: 1px solid #d8d8d8
+.reg__block_mod
+	margin-top: 20px
+	padding-bottom: 56px  
+.reg__date
+	+clr
+	.label__select
+		float: left
+.reg__day, .reg__year
+	width: 95px
+.reg__day
+	margin-right: 20px
+.reg__month
+	width: 160px
+	margin-right: 20px
+.reg__security
+	margin-bottom: 20px
+	padding: 20px 25px
+	background: #f3bf5a
+	border-radius: 3px
+	color: #FFF 
+	.title
+		margin-bottom: 15px
+		color: #fff
+	.label__select
+		width: 405px
+		color: #464646 
+		span
+			color: #464646
+.reg__pay 	
+	padding: 0 0 35px 115px
+	margin: 0 20px 30px
+	border-bottom: 1px solid #e5e5e5 
+	+clr	
+	.reg__block
+		float: left
+		width: 390px 
+.reg__card
+	float: left
+	position: relative
+	width: 215px
+	height: 325px
+	margin-right: 20px
+	border-radius: 3px
+	background: #fbefcf
+	@include background-image(linear-gradient(#fbefcf, #f5d99b))
+	border-bottom: 1px solid #ddc48c 
+	overflow: hidden
+.reg__card-in
+	position: relative
+	padding: 35px 40px
+	+fontb
+	color: $bl
+	text-shadow: 0 1px 0 #fff 
+	text-align: center
+	z-index: 5 
+	strong
+		display: block
+		padding-bottom: 25px
+		margin-bottom: 80px
+		border-bottom: 1px solid #f5d78b
+		box-shadow: 0 1px 0 0 #fff 
+		text-transform: uppercase
+		font-size: 16px
+	span
+		font-size: 24px
+.reg__carg-bg
+	position: absolute
+	top: 110px
+	left: 0
+	+s(card)
+	+opacity(.1)
+.reg__confirm
+	margin: 0 20px 25px
+	padding-bottom: 30px
+	border-bottom: 1px solid #e5e5e5
+	.title
+		margin-bottom: 25px 
+	ul
+		margin-bottom: 20px
+	li
+		margin-bottom: 5px
+		span
+			color: $bl 
+.reg__btn
+	margin: 0 20px 15px
+//selection
+.selection
+	float: left
+	width: 455px
+	padding: 20px
+	background: #ebedf0 
+	border-radius: 3px
+.selection__row		
+	+clr
+	&:first-child
+		margin-bottom: 15px
+		border-bottom: 1px solid #d9dee2 
+.selection__from, .selection__to
+	float: left
+	width: 175px 
+	.label__title
+		+font
+	.fieldset
+		.label
+			width: 80px
+			&:first-child
+				margin-right: 0 
+		.label__select
+			span
+				font-size: 15px
+				color: $gr 
+.selection__dots
+	float: left
+	width: 15px
+	padding-top: 7px
+	text-align: center
+	font-size: 16px
+	+fontb	
+.selection__time 	
+	float: left	
+	margin: 25px 14px 0
+	text-align: center
+.selection__time-in	
+	width: 73px
+	border: 1px solid #d9dee2
+	border-radius: 4px
+	button
+		width: 73px
+		height: 23px 
+		i
+			display: inline-block
+	strong
+		+fontb
+		font-size: 28px
+		color: $bl
+		letter-spacing: -1px 
+.selection__time-up
+	i
+		+s(time-up)
+.selection__time-down
+	i
+		+s(time-down)
+.selection__time-hour
+	color: $gr 
+.selection__arr
+	position: relative
+	float: left
+	width: 41px
+	height: 40px
+	margin-right: 15px
+	background: $gr
+	border-bottom: 2px solid $grd   
+	border-radius: 3px
+	i
+		position: absolute
+		top: 11px
+		left: 11px 
+		+s(arr)
+.selection__search
+	float: left
+	border-radius: 3px 
+	.label
+		position: relative
+		float: left
+		width: 272px
+		margin-bottom: 0
+		i
+			position: absolute
+			top: 11px
+			left: 10px
+			+s(search)
+	.label__txt
+		padding: 0 14px 0 35px
+.selection__down
+	position: relative
+	float: left
+	width: 125px
+	span, li
+		padding-left: 16px
+		height: 40px
+		line-height: 40px
+		+fontb
+		color: #fff 
+		cursor: pointer
+	span
+		position: relative
+		display: block		
+		background: #afbbc0 
+		border-radius: 3px 0 0 3px		
+		i
+			position: absolute
+			top: 16px
+			right: 12px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 6px 5px 0 5px
+			border-color: #fff transparent transparent transparent
+	ul
+		display: none
+		position: absolute
+		top: 39px
+		left: 0
+		right: 0
+		background: #afbbc0 
+		border-top: 1px solid #b7c2c6
+		border-radius: 0 0 3px 3px 
+		overflow: hidden
+		li
+			&:hover
+				background: $gr
+	&.is-open
+		span
+			border-radius: 3px 0 0 0 
+//choice
+.choice
+	position: relative
+	padding: 25px
+	box-shadow: 0 3px 2px -2px rgba(0,0,0,.2)
+	z-index: 10 
+	.title
+		margin-bottom: 15px
+.choice__cols 	
+	+clr
+.choice__cars
+	float: right
+	width: 345px 
+	padding: 30px 0
+	border: 1px solid #e5e5e5
+	border-width: 1px 0
+.choice__cars-in
+	margin: 0 -20px -30px 0
+	font-size: 0
+	a
+		display: inline-block
+		width: 105px
+		margin: 0 15px 30px 0
+		vertical-align: top
+		text-align: center		
+		span
+			display: block
+			padding: 2px 0
+			border-radius: 3px
+			font-size: 13px
+			color: #464646 
+		&.is-active
+			span
+				background: $gr
+				color: #FFF  
+//map
+.map__in
+	position: relative
+.map__mark	
+	position: relative
+	padding: 20px 25px
+	box-shadow: 0 -5px 5px -2px rgba(0,0,0,.2)
+	+clr
+	z-index: 10 
+	li
+		float: left
+		position: relative
+		width: 180px
+		margin-right: 20px
+		padding-left: 27px
+		font-size: 11px
+		color: $gr 
+		i
+			position: absolute
+			top: 0
+			left: 0
+.map__mark-green
+	+s(mark-green)
+.map__mark-yellow
+	+s(mark-yellow)
+.map__mark-red
+	+s(mark-red)
+.auto
+	position: absolute
+	top: 10px
+	right: 10px
+	width: 360px
+	background: #fafafa 
+.auto__title
+	padding: 8px 10px
+	+fontb
+.auto__in
+	position: relative
+	padding: 30px 20px 5px
+	background: #fff 
+	border-bottom: 1px solid #e0e4e6 
+.auto__in_mod
+	.auto__item
+		span
+			background: #f4b610 
+.auto__item
+	margin-bottom: 15px
+	overflow: hidden
+	span, img, ul, li
+		float: left
+	span
+		width: 24px
+		height: 24px
+		margin-right: 20px
+		background: #31a63c
+		border-radius: 50%
+		+fontb
+		color: #fff
+		font-size: 16px  
+		text-align: center
+		line-height: 21px
+	img
+		margin-right: 20px
+	ul
+		margin-top: 4px
+	li
+		width: 27px
+		height: 16px
+		background: #ebedf0  
+		box-shadow: -1px 0 0 rgba(0,0,0,.2)
+		&:first-child, &:last-child
+			width: 18px 
+		&:first-child
+			border-radius: 6px 0 0 6px
+			box-shadow: none
+		&:last-child
+			border-radius: 0 6px 6px 0
+		&.is-red
+			background: #cf0000
+		&.is-green
+			background: #4bdb58
+.auto__time
+	position: absolute
+	top: 15px
+	left: 142px
+	font-size: 11px
+.auto__time_mod
+	left: 305px
+.auto__line
+	position: absolute
+	top: 30px
+	bottom: 20px
+	left: 156px
+	width: 1px
+	background: rgb(0,0,0)
+	background: rgba(0,0,0,.2)  
+.auto__line_mod
+	left: 318px
+//car
+.car
+.car__item
+	margin-bottom: 20px
+	box-shadow: 0 1px 1px rgba(0,0,0,.2)  
+	border-radius: 3px
+	background: #FFF 
+	+clr
+	&:last-child
+		margin-bottom: 30px
+.car__pic
+	float: left
+	width: 520px
+	position: relative
+	img 
+		display: block
+		border-radius: 3px 0 0 3px
+.car__pic-in
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 35px 25px 35px 90px
+	@include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8)))
+	border-radius: 3px 0 0 3px
+	+fontb
+	color: #fff 
+	text-shadow: 0 1px 0 #443f3b
+	img
+		position: absolute
+		top: 35px
+		left: 35px 
+	strong
+		display: block
+		font-size: 21px
+.car__right
+	padding: 25px 30px
+	overflow: hidden
+	.title
+		padding: 10px 0 7px
+		text-align: center
+		font-size: 11px
+	.btn
+		width: 100%
+.car__param
+	padding-bottom: 4px
+	overflow: hidden
+	li
+		position: relative
+		float: left
+		margin-right: 20px
+		line-height: 1
+		+fontb
+		font-size: 24px
+		color: $gr
+	i
+		position: absolute
+		top: 3px
+		left: 0
+.car__door
+	padding-left: 26px
+	i
+		top: 3px 
+		+s(set-door)
+.car__man
+	padding-left: 22px
+	i
+		top: 2px
+		+s(set-man)
+.car__option
+	padding: 12px 0
+	border: 1px solid #e5e5e5
+	border-width: 1px 0
+	overflow: hidden
+	li
+		position: relative
+		float: left
+		padding-left: 30px 
+		margin-left: 25px
+		+fontb
+		&:first-child
+			margin-left: 0
+		i
+			position: absolute
+			top: -6px
+			left: 0
+.car__option-1
+	+s(opt1)
+.car__option-2
+	+s(opt2)
+.car__option-3
+	+s(opt3)
+.car__option-4
+	+s(opt4)
+.car__option-5
+	+s(opt5)
+.car__option-6
+	+s(opt6)
+.car__message
+	padding: 5px 0 10px
+	font-size: 11px
+	text-align: center
+	strong
+		+fontb
+		color: $bl 
+.car__price
+	width: 100%
+	th, td
+		padding: 7px 5px
+		border: 1px solid #e5e5e5
+		text-align: center
+		&:first-child
+			text-align: left
+	th
+		font-size: 10px
+		text-transform: uppercase
+		color: $gr
+		&.is-orange
+			color: #f4b610 
+	td
+		font-size: 12px
+		color: $bl
+		strong
+			+fontb
+		&:first-child
+			+fontb	
+			color: #464646 
+			i, span
+				display: inline-block
+				vertical-align: middle 
+			i
+				margin-right: 9px
+			span
+				margin-top: 1px
+.car__day
+	+s(day)
+.car__night
+	+s(night)
+.car__clock
+	+s(clock) 

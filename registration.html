@@ -1,0 +1,538 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<!-- BEGIN .header -->
+	<header class="header">
+		<div class="container">
+			<a class="logo" href="#">StreetCar.ru</a>
+			<div class="city js-select">
+				<span>Санкт-Петербург<i></i></span>
+				<ul>
+					<li>Москва</li>
+					<li>Краснодар</li>
+					<li>Нижний Новгород</li>
+					<li>Новгород</li>
+					<li>Новосибирск</li>
+					<li>Сочи</li>
+				</ul>
+			</div>
+			<div class="enter">
+				<button class="enter__btn">Войти<i></i></button>
+			</div>
+			<ul class="links">
+				<li><a href="#">Частным лицам</a></li>                 
+				<li><a href="#">Организациям</a></li>
+				<li><a href="#">Гос. структурам</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- END .header -->
+	<!-- BEGIN .nav -->
+	<nav class="nav">
+		<ul class="container">
+			<li class="is-active"><a href="#">Как это работает?<i class="nav__ico-1"></i></a></li>
+			<li><a href="#">Нужен ли мне Street Car?<i class="nav__ico-2"></i></a></li>
+			<li><a href="#">Выбрать авто<i class="nav__ico-3"></i></a></li>
+			<li><a href="#">Тарифы<i class="nav__ico-4"></i></a></li>
+			<li><a href="#">Частые вопросы<i class="nav__ico-5"></i></a></li>
+		</ul>
+	</nav>
+	<!-- END .nav -->
+	<!-- BEGIN .container -->
+	<div class="container">		
+		<div class="top">
+			<div class="top__title"><span>АНКЕТА УЧАСТНИКА STREETCAR</span></div>
+			<div class="top__txt">
+				<p>Вы сможете начать пользоваться автомобилями Street Car в любой точки города как только ваша заявка будет одобрена.</p>
+				<p>Срок рассмотрения заявки занимает до 48 часов.</p>
+			</div>
+		</div>	
+		<div class="container__in">
+			<!-- BEGIN .reg -->
+			<div class="reg">
+				<div class="reg__terms">
+					<div class="title">Мы не предоставляем сервис:</div>
+					<ul>
+						<li>Не имеющим действующего водительского удостоверения категории B</li>
+						<li>Имеющим стаж вождения менее 1 года</li>
+						<li>Лишенным водительских прав в течение последних 24 месяцев за вождения автомобиля в нетрезвом виде или наркотическом опьянении</li>
+						<li>Оштрафованным более 3-х раз за превышение скоростного режима</li>
+						<li>Имеющим судимость за кражу автомобиля</li>
+						<li>Покидавшим место аварии, не дождавшись сотрудников ДПС</li>
+					</ul>
+				</div>
+				<div class="reg__security">
+					<div class="title">Заполните информацию ниже для нашей службой безопасности</div>
+					<label class="label">
+						<span class="label__title">Были ли аварии с Вашим участием было за последние 3 года где Вы были признаны виноватыми?</span>
+						<div class="label__select js-select">
+							<span>Не было<i></i></span>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+							</ul>
+						</div>
+					</label>
+					<label class="label">
+						<span class="label__title">Были ли у Вас штрафы за нарушение ПДД за последние 12 месяцев?</span>
+						<div class="label__select js-select">
+							<span>Не было<i></i></span>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+							</ul>
+						</div>
+					</label>
+					<label class="label">
+						<span class="label__title">Водили ли Вы автомобиль в состоянии алкогольного или наркотического опьянения за последние 3 года?</span>
+						<div class="label__select js-select">
+							<span>Нет<i></i></span>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+							</ul>
+						</div>
+					</label>
+				</div>
+				<div class="reg__cols">
+					<div class="reg__col">
+						<div class="reg__block">
+							<div class="title">Персональная информация</div>
+							<label class="label">
+								<span class="label__title">Фамилия</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Имя</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Отчество</span>
+								<input class="label__txt" type="text">
+							</label>
+							<div class="label reg__date">
+								<span class="label__title">Дата рождения</span>
+								<div class="label__in">
+									<div class="label__select reg__day js-select">
+										<span>День<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+											<li>8</li>
+											<li>9</li>
+											<li>10</li>
+											<li>11</li>
+											<li>12</li>
+											<li>13</li>
+											<li>14</li>
+											<li>15</li>
+											<li>16</li>
+											<li>17</li>
+											<li>18</li>
+											<li>19</li>
+											<li>20</li>
+											<li>21</li>
+											<li>22</li>
+											<li>23</li>
+											<li>24</li>
+											<li>25</li>
+											<li>26</li>
+											<li>27</li>
+											<li>28</li>
+											<li>29</li>
+											<li>30</li>
+										</ul>
+									</div>
+									<div class="label__select reg__month js-select">
+										<span>Месяц<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+									<div class="label__select reg__year js-select">
+										<span>Год<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+								</div>								
+							</div>
+							<label class="label">
+								<span class="label__title">Адрес регистрации</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Город</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">
+									Фактический адрес
+									<label class="checkbox"><input type="checkbox" checked><i></i>совпадает с адресом регистрации</label>
+								</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Город</span>
+								<input class="label__txt" type="text">
+							</label>
+							<fieldset class="fieldset">
+								<label class="label">
+									<span class="label__title">Email</span>
+									<input class="label__txt" type="text">
+								</label>
+								<label class="label">
+									<span class="label__title">Моб. телефон</span>
+									<input class="label__txt" type="text">
+								</label>
+							</fieldset>
+							<div class="title title_mod">Персональная информация</div>
+							<label class="label">
+								<span class="label__title">Пароль</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Повторите пароль</span>
+								<input class="label__txt" type="text">
+							</label>
+						</div>
+					</div>
+					<div class="reg__col">
+						<div class="reg__block">
+							<div class="title">Паспорт</div>
+							<label class="label">
+								<span class="label__title">Тип</span>
+								<div class="label__select js-select">
+									<span>Внутренний паспорт<i></i></span>
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+									</ul>
+								</div>
+							</label>
+							<fieldset class="fieldset">
+								<label class="label">
+									<span class="label__title">Серия</span>
+									<input class="label__txt" type="text">
+								</label>
+								<label class="label">
+									<span class="label__title">Номер</span>
+									<input class="label__txt" type="text">
+								</label>
+							</fieldset>
+							<div class="label reg__date">
+								<span class="label__title">Дата выдачи</span>
+								<div class="label__in">
+									<div class="label__select reg__day js-select">
+										<span>День<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+											<li>8</li>
+											<li>9</li>
+											<li>10</li>
+											<li>11</li>
+											<li>12</li>
+											<li>13</li>
+											<li>14</li>
+											<li>15</li>
+											<li>16</li>
+											<li>17</li>
+											<li>18</li>
+											<li>19</li>
+											<li>20</li>
+											<li>21</li>
+											<li>22</li>
+											<li>23</li>
+											<li>24</li>
+											<li>25</li>
+											<li>26</li>
+											<li>27</li>
+											<li>28</li>
+											<li>29</li>
+											<li>30</li>
+										</ul>
+									</div>
+									<div class="label__select reg__month js-select">
+										<span>Месяц<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+									<div class="label__select reg__year js-select">
+										<span>Год<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+								</div>								
+							</div>
+							<label class="label">
+								<span class="label__title">Кем выдан</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Место выдачи</span>
+								<input class="label__txt" type="text">
+							</label>
+							<div class="title title_mod">Водительское удостоверение</div>
+							<fieldset class="fieldset">
+								<label class="label">
+									<span class="label__title">Номер</span>
+									<input class="label__txt" type="text">
+								</label>
+								<div class="label">
+									<span class="label__title">Стаж водитеaля</span>
+									<div class="label__select js-select">
+										<span>Менее года<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="reg__block reg__block_mod">
+							<div class="title">Дополнительная Информация</div>
+							<label class="label">
+								<span class="label__title">Сколько километров вы проезжаете ежегодно?</span>
+								<input class="label__txt" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Как вы о нас узнали?</span>
+								<div class="label__select js-select">
+									<span>Реклама в поисковике<i></i></span>
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+									</ul>
+								</div>
+							</label>
+							<label class="label">
+								<span class="label__title">Вам посоветовал нас действующий член StreetCar?</span>
+								<span class="label__title-small">Введите его имя и он получит бонус</span>
+								<input class="label__txt" type="text">
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="reg__pay">
+					<div class="reg__card">
+						<div class="reg__card-in">
+							<strong>золотая Карта</strong>
+							<span>600 руб.</span>
+						</div>
+						<div class="reg__carg-bg"></div>
+					</div>
+					<div class="reg__block">
+						<div class="title">Платежная Информация</div>
+						<fieldset class="fieldset">
+								<div class="label">
+									<span class="label__title">Тип карты</span>
+									<div class="label__select js-select">
+										<span>VISA<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>
+								</div>
+								<label class="label">
+									<span class="label__title">Имя владельца карты</span>
+									<input class="label__txt" type="text">
+								</label>
+							</fieldset>
+							<label class="label">
+								<span class="label__title">Номер кредитной карты</span>
+								<input class="label__txt" type="text">
+							</label>
+							<div class="fieldset fieldset_mod">
+								<div class="label reg__date">
+									<span class="label__title">Дата выдачи</span>
+									<div class="label__in">
+										<div class="label__select reg__month js-select">
+											<span>Месяц<i></i></span>
+											<ul>
+												<li>1</li>
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+												<li>5</li>
+												<li>6</li>
+												<li>7</li>
+											</ul>
+										</div>
+										<div class="label__select reg__year js-select">
+											<span>Год<i></i></span>
+											<ul>
+												<li>1</li>
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+												<li>5</li>
+												<li>6</li>
+												<li>7</li>
+											</ul>
+										</div>									
+									</div>								
+								</div>
+								<label class="label">
+									<span class="label__title">CVV Код</span>
+									<input class="label__txt" type="text">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="reg__confirm">
+						<div class="title">Заполнив данную анкету вы подтверждаете следуещее:</div>
+						<ul>
+							<li><span>1.</span> Я подтверждаю, что вся информация изложенная мною является правдивой.</li>
+							<li><span>2.</span> Я позволяю Street Car хранить данную информацию для своего внутреннего использования независимо от того будет ли моя заявка одобрена или нет.</li>
+							<li><span>3.</span> Я позволяю Street Car проверить предоставленную мной информацию.</li>
+							<li><span>4.</span> Я подтверждаю, что мне исполнился 21 год.</li>
+							<li><span>5.</span> Я подтверждаю, что при заведомо ложном или неверном заполнении этой анкеты STREET CAR имеет право расторгнуть договор в одностороннем порядке.</li>
+							<li><span>6.</span> Я прочел условия договора по этой ссылке и понимаю условия предостовления услуг.</li>
+						</ul>
+						<label class="checkbox"><input type="checkbox" checked><i></i>Я согласен и принимаю данные условия</label>
+					</div>
+					<div class="reg__btn">
+						<button class="btn">Отправить заявку</button>
+					</div>
+				</div>
+			</div>
+			<!-- END .reg -->
+		</div>		
+	</div>
+	<!-- END .container -->
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<nav class="footer__nav">
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Пресс-служба</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Правила пользования</a></li>
+					<li><a href="#">Подарочный сертификат</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Работа у нас</a></li>
+					<li><a href="#">Инвесторам</a></li>
+				</ul>
+			</nav>
+			<div class="phone">
+				<div class="phone__title">Обратная связь</div>
+				<div class="phone__number">8 800 <strong>100 64 77</strong></div>
+			</div>
+			<div class="social">
+				<a class="social__fb" href="#"></a>
+				<a class="social__tw" href="#"></a>
+				<a class="social__vm" href="#"></a>
+			</div>
+		</div>
+		<ul class="line">
+			<li class="line__blue"></li>
+			<li class="line__dark"></li>
+			<li class="line__gray"></li>
+		</ul>
+		<div class="footer__down">
+			<div class="copyright">StreetCar.ru © 2013. All rights reserved</div>
+			<a class="logo" href="#">StreetCar.ru</a>
+			<div class="footer__links">
+				<a href="#">Terms of Use</a>
+				<a href="#">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>
