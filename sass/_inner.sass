@@ -344,6 +344,46 @@
 	padding: 20px
 	background: #ebedf0 
 	border-radius: 3px
+.selection_wide
+	float: none
+	width: auto 
+	margin-bottom: 20px
+	.selection__from, .selection__to
+		width: auto
+		.label, .fieldset
+			float: left
+		.label
+			&:first-child
+				margin-right: 15px
+		.fieldset
+			margin-top: 25px
+	.selection__time 
+		margin-top: 0
+	.selection__time-in
+		width: auto
+		overflow: hidden
+		button
+			float: left
+			width: 20px
+			height: 40px
+		strong
+			float: left
+			width: 74px
+			height: 38px
+			line-height: 38px
+	.selection__time-hour
+		margin-bottom: 10px
+		text-align: left
+		color: #464646 
+	.selection__time-up
+		i
+			+s(time-left)
+	.selection__time-down
+		i
+			+s(time-right)
+	.selection__search
+		.label
+			width: 667px 
 .selection__row		
 	+clr
 	&:first-child
@@ -381,6 +421,7 @@
 	button
 		width: 73px
 		height: 23px 
+		background: none
 		i
 			display: inline-block
 	strong
@@ -500,7 +541,34 @@
 		&.is-active
 			span
 				background: $gr
-				color: #FFF  
+				color: #FFF
+.choice__cars_wide
+	float: none
+	width: auto  
+	padding: 0
+	border: none
+	.title
+		position: relative
+		display: inline-block
+		padding-right: 27px 
+		i
+			position: absolute
+			top: 6px
+			right: 0
+			+s(arr-top)
+	.choice__cars-in
+		margin: 0
+		padding: 10px 
+		border-top: 1px solid #e5e5e5 
+		strong
+			display: inline-block
+			width: 200px 
+			margin-top: 22px
+			+fontb
+			color: $gr 
+			font-size: 18px
+		a
+			margin: 0 15px 0 0
 //map
 .map__in
 	position: relative
@@ -739,3 +807,209 @@
 	+s(night)
 .car__clock
 	+s(clock) 
+//plans
+.plans
+	padding: 20px 0
+.plans__row
+	position: relative
+	+clr	
+	li
+		float: left
+		width: 215px
+		text-align: center
+		margin-right: 20px
+		&:first-child
+			width: 390px
+			margin-left: 40px
+			text-align: left
+			+box
+		&.plans__contacts
+			width: 430px
+			margin-left: 0
+			padding-top: 25px			 
+	.plans__price-first, .plans__price-second
+		width: 135px	
+.plans__title
+	.top
+		padding: 25px 0
+		text-align: left
+.plans__card
+	height: 89px
+	background: #f2f2f2
+	@include background-image(linear-gradient(#f2f2f2, #f0f0f0))
+	border-radius: 5px 5px 0 0
+	border-top: 1px solid #fbfbfb 
+	line-height: 89px 
+	strong
+		display: inline-block
+		vertical-align: middle
+		margin: 0 40px
+		line-height: 1
+		+fontb
+		color: $bl
+		font-size: 20px
+		text-transform: uppercase
+		text-shadow: 0 1px 0 #fff 
+		text-align: center
+.plans__card_gold
+	background: #fbefcf
+	@include background-image(linear-gradient(#fbefcf, #faeecc))
+	border-color: #fefaef
+.plans__price-first, .plans__price-second
+	position: absolute
+	top: 0
+	left: 490px
+	bottom: 0
+	line-height: 1 
+	border-top: 1px solid #ddd
+	box-shadow: 0 1px 0 #fff inset
+	z-index: 10 
+	strong
+		position: absolute
+		top: 30%
+		left: 0
+		right: 0
+		+fontb
+		color: $bl
+		font-size: 27px
+		text-shadow: 0 1px 0 #fff 
+		text-align: center
+		span
+			display: block
+	i
+		position: absolute
+		left: 50px
+		top: 30%
+	.plans__no
+		left: 52px
+		top: 35%
+.plans__price-big
+	strong
+		top: 40%
+.plans__price-second
+	left: 725px 
+	border-color: #f5d585
+.plans__no
+	+s(no)
+.plans__ok
+	+s(ok)
+.plans__bg
+	position: relative
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+	border-radius: 3px
+	background: #fff
+	.plans__row		
+		&:first-child
+			li
+				&:first-child
+					border: none
+		li
+			&:first-child
+				padding: 25px 0
+				border-top: 1px solid #e5e5e5 
+.plans__txt
+	padding-top: 20px
+.plans__btn
+	background: #e0e0e0
+	@include background-image(linear-gradient(#e0e0e0, #dfdfdf))
+	border-bottom: 1px solid #c9c9c9 
+	border-radius: 0 0 5px 5px	
+.plans__btn-in
+	padding: 32px 0
+	margin: 0 40px
+	border-top: 1px solid #dddddd
+	box-shadow: 0 1px 0 white inset
+	text-align: center
+	.btn
+		width: 100%
+.plans__btn_mod
+	background: #f6da9f
+	@include background-image(linear-gradient(#f6da9f, #f5d99b))
+	border-color: #ddc48c
+	.plans__btn-in
+		border-color: #f5d585
+.plans__col-first, .plans__col-second
+	position: absolute
+	top: 0
+	bottom: 0	
+	width: 215px
+	i
+		position: absolute
+		top: 20%
+		+s(card)
+		+opacity(.1)
+.plans__col-first
+	left: 450px
+	background: #f0f0f0
+	@include background-image(linear-gradient(#f0f0f0, #e0e0e0))
+.plans__col-second
+	left: 685px 
+	background: #faeecc
+	@include background-image(linear-gradient(#faeecc, #f6da9f))
+.plans__contacts
+	p
+		margin-bottom: 5px
+		line-height: 1
+		strong
+			+fontb
+		&:first-child
+			margin-bottom: 10px
+			strong
+				display: block
+				font-size: 15px
+.plans__phone
+	span, strong
+		font-size: 20px
+	span
+		color: #afbbc0 
+//rules
+.rules
+	margin-bottom: 10px
+	+clr
+.rules__col
+	float: left
+	margin-left: 20px
+	&:first-child
+		margin-left: 0
+.rules__item
+	width: 300px
+	margin-bottom: 20px
+	box-shadow: 0 1px 1px rgba(0,0,0,.2)
+	border-radius: 3px
+	background: #fff 
+.rules__desc
+	padding: 25px
+	.title
+		position: relative
+		margin-bottom: 10px
+		padding-left: 45px 
+		line-height: 1.2
+		.number
+			position: absolute
+			top: 0
+			left: 0
+.rules__pic
+	position: relative
+	img
+		display: block
+		border-radius: 0 0 3px 3px
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 36px
+		height: 36px
+		margin: -22px 0 0 -22px
+		border: 4px solid rgba(255,255,255,.8)
+		background: rgba(0,0,0,0.7) 
+		border-radius: 50%
+		i
+			position: absolute
+			top: 7px
+			left: 11px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 11px 0 11px 20px
+			border-color: transparent transparent transparent #ffffff
+			
