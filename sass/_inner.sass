@@ -83,7 +83,10 @@
 	font-size: 13px
 	span
 		display: block
-		color: #464646 
+		color: #464646
+	&:hover
+		span
+			text-decoration: underline  
 .our-cars__price
 	padding-top: 5px
 	color: $bld
@@ -93,6 +96,8 @@
 .our-cars__btn-prev, .our-cars__btn-next
 	position: absolute
 	top: 110px
+	&:hover
+		opacity: .6
 .our-cars__btn-prev
 	left: -20px
 	+s(our-cars-prev)
@@ -280,6 +285,14 @@
 		color: #464646 
 		span
 			color: #464646
+		li
+			&:hover
+				background: #e49804
+		&.is-open
+			span
+				box-shadow: 0 0 0 2px #e49804
+			ul
+				border-color: #e49804
 .reg__pay 	
 	padding: 0 0 35px 115px
 	margin: 0 20px 30px
@@ -323,6 +336,11 @@
 	left: 0
 	+s(card)
 	+opacity(.1)
+.reg__card-user
+	.label
+		width: 255px
+		&:first-child
+			width: 115px 
 .reg__confirm
 	margin: 0 20px 25px
 	padding-bottom: 30px
@@ -352,8 +370,9 @@
 		width: auto
 		.label, .fieldset
 			float: left
-		.label
+		& > .label
 			&:first-child
+				width: 162px
 				margin-right: 15px
 		.fieldset
 			margin-top: 25px
@@ -426,7 +445,7 @@
 			display: inline-block
 	strong
 		+fontb
-		font-size: 28px
+		font-size: 24px
 		color: $bl
 		letter-spacing: -1px 
 .selection__time-up
@@ -531,7 +550,10 @@
 		width: 105px
 		margin: 0 15px 30px 0
 		vertical-align: top
-		text-align: center		
+		text-align: center	
+		&:hover
+			span
+				text-decoration: underline	
 		span
 			display: block
 			padding: 2px 0

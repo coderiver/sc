@@ -113,15 +113,15 @@ table
 		display: none
 		position: absolute
 		top: 31px
-		left: 0
-		right: 0
-		background: #f7f7fa
+		left: -2px
+		right: -2px
+		background: #fff
 		border-radius: 0 0 15px 15px 
 		z-index: 10 
 	li
 		height: 30px		
 		padding-left: 18px
-		border-top: 1px solid #fff 
+		border-top: 1px solid #f7f7fa 
 		white-space: nowrap
 		line-height: 30px
 		cursor: pointer
@@ -129,10 +129,19 @@ table
 			background: #4e9bcc 
 			color: #fff 
 		&:last-child
-			border-radius: 0 0 15px 15px 
+			border-radius: 0 0 10px 10px 
 	&.is-open
+		ul
+			display: block
+			border: 2px solid $bl
+			border-width: 0 2px 2px 2px
 		span
+			background: #fff 
 			border-radius: 15px 15px 0 0
+			box-shadow: 0 0 0 2px $bl
+			i
+				border-width: 0 4px 4px 4px
+				border-color: transparent transparent #afbbc0 transparent
 .enter
 	float: right
 .enter__btn
@@ -187,23 +196,27 @@ table
 			border-right: 1px solid #7a8991
 			box-shadow: 1px 0 0 #7a8991 inset, -1px 0 0 #4E6269 inset
 			line-height: 47px
-			&.is-active				
-				background: $bl
-				box-shadow: 0 -2px 0 $bld inset 
+			&.is-active, &:hover					 
 				border: none
 				z-index: 5
 				a
 					padding: 0 21px 0 59px
 				i
 					position: absolute
-					left: 19px
+					left: 19px			
+			&:hover
+				background: #7f919b 
+				box-shadow: 0 -2px 0 #6a7880 inset
+			&.is-active
+				background: $bl
+				box-shadow: 0 -2px 0 $bld inset
 		a
 			position: relative
 			display: block
 			padding: 0 20px 0 58px
 			+fontb
 			color: #fff
-			text-shadow: 0 -1px 0 rgba(0,0,0,.3)
+			text-shadow: 0 -1px 0 rgba(0,0,0,.3)			
 		i
 			position: absolute
 			top: 9px
@@ -237,6 +250,8 @@ table
 		margin-bottom: 3px
 	a
 		color: #464646 
+		&:hover
+			text-decoration: underline
 .footer__down
 	padding-top: 25px
 	+clr	
@@ -274,6 +289,8 @@ table
 	a
 		float: left
 		margin-left: 3px
+		&:hover
+			opacity: .6
 .social__fb
 	+s(fb)
 .social__tw
@@ -395,12 +412,13 @@ a
 		+fontb
 		color: $gr
 .label__select
+	+no-sel
 	ul
 		display: none
 		position: absolute
 		top: 40px
-		left: 0
-		right: 0
+		left: -2px
+		right: -2px
 		max-height: 250px
 		background: #FFF
 		border-top: 1px solid #fafafa 
@@ -414,8 +432,19 @@ a
 			color: #FFF  
 	&.is-open
 		z-index: 10 
+		ul
+			display: block
+			border: 2px solid $bl
+			border-width: 0 2px 2px 2px
+		li
+			&:first-child
+				border-top: 2px solid #fafafa 
 		span
 			border-radius: 3px 3px 0 0
+			box-shadow: 0 0 0 2px $bl
+			i
+				border-width: 0 5px 6px 5px
+				border-color: transparent transparent #464646 transparent
 .label__in, .fieldset
 	+clr
 .fieldset
@@ -426,9 +455,12 @@ a
 			margin-right: 20px
 .fieldset_mod
 	.label
-		width: 95px
+		width: 130px
 		&:first-child
-			width: 275px 
+			width: 240px 
+	.label__in
+		.label__select
+			width: 110px
 .checkbox
 	position: relative
 	padding-left: 22px
@@ -461,7 +493,7 @@ a
 	padding: 25px
 	margin-left: -170px 
 	background: #fff
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+	box-shadow: 0 0 0 2px $bl
 	border-radius: 3px
 	z-index: 1000 
 	.title

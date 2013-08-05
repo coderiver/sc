@@ -404,11 +404,33 @@
 					</div>
 					<div class="reg__block">
 						<div class="title">Платежная Информация</div>
-						<fieldset class="fieldset">
-								<div class="label">
-									<span class="label__title">Тип карты</span>
-									<div class="label__select js-select">
-										<span>VISA<i></i></span>
+						<div class="fieldset reg__card-user">
+							<div class="label">
+								<span class="label__title">Тип карты</span>
+								<div class="label__select js-select">
+									<span>VISA<i></i></span>
+									<ul>
+										<li>VISA</li>
+										<li>MAESTRO</li>
+										<li>PAYPAL</li>
+									</ul>
+								</div>
+							</div>
+							<label class="label">
+								<span class="label__title">Имя владельца карты</span>
+								<input class="label__txt" type="text">
+							</label>
+						</div>
+						<label class="label">
+							<span class="label__title">Номер кредитной карты</span>
+							<input class="label__txt" type="text">
+						</label>
+						<div class="fieldset fieldset_mod">
+							<div class="label reg__date">
+								<span class="label__title">Дата выдачи</span>
+								<div class="label__in">
+									<div class="label__select reg__month js-select">
+										<span>Месяц<i></i></span>
 										<ul>
 											<li>1</li>
 											<li>2</li>
@@ -419,68 +441,41 @@
 											<li>7</li>
 										</ul>
 									</div>
-								</div>
-								<label class="label">
-									<span class="label__title">Имя владельца карты</span>
-									<input class="label__txt" type="text">
-								</label>
-							</fieldset>
+									<div class="label__select reg__year js-select">
+										<span>Год<i></i></span>
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+										</ul>
+									</div>									
+								</div>								
+							</div>
 							<label class="label">
-								<span class="label__title">Номер кредитной карты</span>
+								<span class="label__title">CVV Код</span>
 								<input class="label__txt" type="text">
 							</label>
-							<div class="fieldset fieldset_mod">
-								<div class="label reg__date">
-									<span class="label__title">Дата выдачи</span>
-									<div class="label__in">
-										<div class="label__select reg__month js-select">
-											<span>Месяц<i></i></span>
-											<ul>
-												<li>1</li>
-												<li>2</li>
-												<li>3</li>
-												<li>4</li>
-												<li>5</li>
-												<li>6</li>
-												<li>7</li>
-											</ul>
-										</div>
-										<div class="label__select reg__year js-select">
-											<span>Год<i></i></span>
-											<ul>
-												<li>1</li>
-												<li>2</li>
-												<li>3</li>
-												<li>4</li>
-												<li>5</li>
-												<li>6</li>
-												<li>7</li>
-											</ul>
-										</div>									
-									</div>								
-								</div>
-								<label class="label">
-									<span class="label__title">CVV Код</span>
-									<input class="label__txt" type="text">
-								</label>
-							</div>
 						</div>
-					</div>
-					<div class="reg__confirm">
-						<div class="title">Заполнив данную анкету вы подтверждаете следуещее:</div>
-						<ul>
-							<li><span>1.</span> Я подтверждаю, что вся информация изложенная мною является правдивой.</li>
-							<li><span>2.</span> Я позволяю Street Car хранить данную информацию для своего внутреннего использования независимо от того будет ли моя заявка одобрена или нет.</li>
-							<li><span>3.</span> Я позволяю Street Car проверить предоставленную мной информацию.</li>
-							<li><span>4.</span> Я подтверждаю, что мне исполнился 21 год.</li>
-							<li><span>5.</span> Я подтверждаю, что при заведомо ложном или неверном заполнении этой анкеты STREET CAR имеет право расторгнуть договор в одностороннем порядке.</li>
-							<li><span>6.</span> Я прочел условия договора по этой ссылке и понимаю условия предостовления услуг.</li>
-						</ul>
-						<label class="checkbox"><input type="checkbox" checked><i></i>Я согласен и принимаю данные условия</label>
-					</div>
-					<div class="reg__btn">
-						<button class="btn">Отправить заявку</button>
-					</div>
+					</div>					
+				</div>
+				<div class="reg__confirm">
+					<div class="title">Заполнив данную анкету вы подтверждаете следуещее:</div>
+					<ul>
+						<li><span>1.</span> Я подтверждаю, что вся информация изложенная мною является правдивой.</li>
+						<li><span>2.</span> Я позволяю Street Car хранить данную информацию для своего внутреннего использования независимо от того будет ли моя заявка одобрена или нет.</li>
+						<li><span>3.</span> Я позволяю Street Car проверить предоставленную мной информацию.</li>
+						<li><span>4.</span> Я подтверждаю, что мне исполнился 21 год.</li>
+						<li><span>5.</span> Я подтверждаю, что при заведомо ложном или неверном заполнении этой анкеты STREET CAR имеет право расторгнуть договор в одностороннем порядке.</li>
+						<li><span>6.</span> Я прочел условия договора по этой ссылке и понимаю условия предостовления услуг.</li>
+					</ul>
+					<label class="checkbox"><input type="checkbox" checked><i></i>Я согласен и принимаю данные условия</label>
+				</div>
+				<div class="reg__btn">
+					<button class="btn">Отправить заявку</button>
 				</div>
 			</div>
 			<!-- END .reg -->
