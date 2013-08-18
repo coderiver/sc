@@ -553,14 +553,21 @@
 		text-align: center	
 		&:hover
 			span
-				text-decoration: underline	
+				//text-decoration: underline	
 		span
 			display: block
 			padding: 2px 0
 			border-radius: 3px
 			font-size: 13px
 			color: #464646 
-		&.is-active
+		&:hover
+			span
+				background: #DFE4E7
+		&:active
+			span
+				background: #586C74 
+				color: #fff 
+		&.is-active, &.is-active:hover, &.is-active:active
 			span
 				background: $gr
 				color: #FFF
