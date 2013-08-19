@@ -56,9 +56,9 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .enter__btn { position: relative; height: 32px; padding: 0 14px 0 24px; margin: 17px 0 0 30px; border: 3px solid #4e9bcc; border-radius: 16px; background: white; overflow: visible; font-family: "HelveticaNeueBold", Arial, Tahoma, sans-serif; }
 .enter__btn i { position: absolute; top: 9px; left: 9px; background: url('../img/icons-se5465a8453.png') 0 -1786px no-repeat; width: 9px; height: 9px; }
-.enter__btn:hover { background: #4e9bcc; color: white; }
+.enter__btn:hover { background: #489cc8; border-color: #489cc8; color: white; }
 .enter__btn:hover i { background: url('../img/icons-se5465a8453.png') 0 -1805px no-repeat; width: 9px; height: 9px; }
-.enter__btn:active { background: #2c7eb2; border-color: #2c7eb2; }
+.enter__btn:active { background: #52b4e7; border-color: #52b4e7; }
 
 .links { float: right; margin-top: 25px; }
 .links li { float: left; padding: 0 15px; border-left: 1px solid #c6cfd3; }
@@ -461,9 +461,9 @@ a.btn { display: inline-block; line-height: 44px; text-align: center; }
 .choice__cars-in { margin: 0 -20px -30px 0; font-size: 0; }
 .choice__cars-in a { display: inline-block; width: 105px; margin: 0 15px 30px 0; vertical-align: top; text-align: center; }
 .choice__cars-in a span { display: block; padding: 2px 0; border-radius: 3px; font-size: 13px; color: #464646; }
-.choice__cars-in a:hover span { background: #dfe4e7; }
-.choice__cars-in a:active span { background: #586c74; color: white; }
-.choice__cars-in a.is-active span, .choice__cars-in a.is-active:hover span, .choice__cars-in a.is-active:active span { background: #596c75; color: white; }
+.choice__cars-in a:hover span { background: #586c74; color: white; }
+.choice__cars-in a:active span { background: #489cc8; color: white; }
+.choice__cars-in a.is-active span, .choice__cars-in a.is-active:hover span, .choice__cars-in a.is-active:active span { background: #dfe4e7; }
 
 .choice__cars_wide { float: none; width: auto; padding: 0; border: none; }
 .choice__cars_wide .title { position: relative; display: inline-block; padding-right: 27px; }
